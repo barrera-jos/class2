@@ -75,7 +75,7 @@ if not p.is_file():
 print(f"File validated: '{args.input}'")
 
 # Check the data
-header, data, missing_rows = check_data(args.filename)
+header, data, missing_rows = check_data(args.input)
 
 # Save the report
 with open(args.output, "w") as f:
